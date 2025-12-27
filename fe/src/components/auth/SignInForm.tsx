@@ -30,7 +30,7 @@ export default function SignInForm() {
     password: Yup.string().required("Password is required"),
     ipAddress: Yup.string(),
   });
-
+  const handleLogin = async () => {};
   return (
     <div className="flex items-center h-screen justify-center flex-col flex-1 w-full ">
       <div className="flex flex-col justify-center flex-1 w-full max-w-xl mx-auto sm:px-6">
@@ -40,8 +40,8 @@ export default function SignInForm() {
               <div className="logo mx-auto">
                 <Image
                   src={"/Logo/hisaab.png"}
-                  width={70}
-                  height={70}
+                  width={50}
+                  height={50}
                   className="mx-auto"
                   alt={"Hisaabi keera Logo"}
                 />
@@ -55,6 +55,20 @@ export default function SignInForm() {
                 Enter your credentials to access your account
               </p>
             </div>
+            <div onClick={handleLogin} className="google cursor-pointer">
+              <div className="flex border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 my-5 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors items-center justify-center">
+                <Image
+                  src={"/images/icons/google.png"}
+                  width={20}
+                  height={20}
+                  alt={"Google Icon"}
+                />
+                <span className="cursor-pointer ml-4 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+                  Sign in with Google
+                </span>
+              </div>
+            </div>
+            <p className="my-5 text-white text-center font-semibold">OR</p>
 
             <Formik
               initialValues={{
