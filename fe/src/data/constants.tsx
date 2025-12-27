@@ -42,14 +42,14 @@ export const sidebarMenu = [
     title: "Menu",
     subList: [
       { title: "Dashboard", icon: BlocksIcon, href: "dashboard" },
-      { title: "Orders", icon: BoxIcon, href: "orders" },
       {
         title: "Create a Dukaan",
         icon: Building2Icon,
         href: "createOrg",
       },
+      { title: "Orders", icon: BoxIcon, href: "orders" },
       { title: "Inventory", icon: DotSquareIcon, href: "inventory" },
-      { title: "Pockets", icon: LucidePocket, href: "pockets" },
+      // { title: "Pockets", icon: LucidePocket, href: "pockets" },
     ],
   },
   // {

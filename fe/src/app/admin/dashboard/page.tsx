@@ -28,9 +28,9 @@ const UADashboard = () => {
         <StatisticsChart />
       </div>
 */}
-        <div className="col-span-12 xl:col-span-5">
+        {/* <div className="col-span-12 xl:col-span-5">
           <AiSuggest />
-        </div>
+        </div> */}
 
         <div className="col-span-12 xl:col-span-7">
           <Products />
